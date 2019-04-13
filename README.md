@@ -14,6 +14,7 @@ Original Author: TaylanTatli
 
 Forked from: github.com/TaylanTatli/dwm
   
+PWM 6.1 is build on DWM Version 6.1
     
 Patches
 ----------------------------
@@ -35,6 +36,9 @@ Patches
 * **Monocle Count**
 * **Move Resize**
 * **Center**
+* **Autostart**
+* **FancyBar**
+* **Dual Status**
   
 Screenshot
 ----------------------------
