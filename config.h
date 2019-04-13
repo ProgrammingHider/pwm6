@@ -123,7 +123,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] 		= { "spawn_rofi", NULL };
-static const char *termcmd[] 		= { "qterminal", NULL };
+static const char *termcmd[] 		= { "xfce4-terminal", NULL };
 static const char *volup[] 		= { "pulseaudio-ctl", "up", NULL };
 static const char *voldown[] 		= { "pulseaudio-ctl", "down", NULL };
 static const char *voltoggle[] 		= { "pulseaudio-ctl", "mute", NULL };
