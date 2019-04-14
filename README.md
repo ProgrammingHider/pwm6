@@ -39,6 +39,10 @@ Patches
 * **Autostart**
 * **FancyBar**
 * **Dual Status**
+
+Installation
+----------------------------
+Referee to the Wiki for Installation
   
 Screenshot
 ----------------------------
