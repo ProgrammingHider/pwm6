@@ -1,0 +1,10 @@
+--- dwm.c
++++ dwm.c
+@@ -589,6 +600,7 @@ configurenotify(XEvent *e)
+ 			updatebars();
+ 			for (m = mons; m; m = m->next)
+ 				XMoveResizeWindow(dpy, m->barwin, m->wx, m->by, m->ww, bh);
++			XMoveResizeWindow(dpy, eb.win, mons->wx, eb.y, mons->ww, bh);
+ 			focus(NULL);
+ 			arrange(NULL);
+ 		}
