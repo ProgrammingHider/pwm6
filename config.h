@@ -133,10 +133,12 @@ static const char *voltoggle[] 		= { "pulseaudio-ctl", "mute", NULL };
 static const char *togtouchpad[] 	= { "touchpad", NULL };
 static const char *screenshot[] 	= { "screenshot", NULL};
 static const char *dropterm[]		= { "dropterm", NULL};
+static const char *betterlock[]		= { "i4", NULL};
 
 
 static Key keys[] = {
 	/* modifier						key						function			argument */
+	{ MODKEY|ShiftMask,					XK_Delete,					spawn,				{.v = betterlock } },
 	{ MODKEY,						XK_F12,						spawn,				{.v = dropterm} },
 	{ MODKEY,						XK_space,					spawn,				{.v = dmenucmd } },
 	{ MODKEY,						XK_Return,					spawn,				{.v = termcmd } },
