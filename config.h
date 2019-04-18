@@ -94,7 +94,7 @@ static const Rule rules[] = {
 	{ "Lxappearance",		NULL,		NULL,		0,		0,		1,			-1 },
 	{ "XCalc",			NULL,		NULL,		0,		0,		1,			-1 },
 	{ "Xgrabcolor",			NULL,		NULL,		0,		0,		1,			-1 },
-	{ "qterminal",			NULL,		NULL,		0,		1,		0,			-2 },
+	{ "qterminal",			NULL,		NULL,		0,		0,		1,			- 1 },
 	{ "qutebrowser",		NULL,		NULL,		2 << 0,		0,		0,			-1 }, 
 };
 
@@ -135,7 +135,6 @@ static const char *screenshot[] 	= { "screenshot", NULL};
 static const char *dropterm[]		= { "dropterm", NULL};
 /*static const char *betterlock[]	= { "i4", NULL}; */
 static const char *slimlock[]		= { "slimlock", NULL };
-
 
 static Key keys[] = {
 	/* modifier						key						function			argument */
