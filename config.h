@@ -89,12 +89,12 @@ static const Rule rules[] = {
 	/* class			instance	title		tags mask	iscentered 	isfloating		monitor */
 	{ "Gimp",			NULL,		NULL,		0,		0,		0,			-1 },
 	{ "Firefox",			NULL,		NULL,		2 << 0,		0,		0,			-1 },
-	{ "Steam",			NULL,		NULL,		5 << 0,		0,		1,			-1 },
+	{ "Steam",			NULL,		NULL,		5,		0,		1,			-1 },
 	{ "Nitrogen",			NULL,		NULL,		0,		0, 		1,			-1 },
 	{ "Lxappearance",		NULL,		NULL,		0,		0,		1,			-1 },
 	{ "XCalc",			NULL,		NULL,		0,		0,		1,			-1 },
 	{ "Xgrabcolor",			NULL,		NULL,		0,		0,		1,			-1 },
-	{ "qterminal",			NULL,		NULL,		0,		0,		1,			- 1 },
+	{ "qterminal",			NULL,		NULL,		0,		0,		1,			-1 },
 	{ "qutebrowser",		NULL,		NULL,		2 << 0,		0,		0,			-1 }, 
 };
 
@@ -125,7 +125,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] 		= { "spawn_rofi", NULL };
+static const char *dmenucmd[] 		= { "spawn_dmenu", NULL };
 static const char *termcmd[] 		= { "xfce4-terminal", NULL };
 static const char *volup[] 		= { "pulseaudio-ctl", "up", NULL };
 static const char *voldown[] 		= { "pulseaudio-ctl", "down", NULL };
@@ -142,6 +142,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,					XK_Delete,					spawn,				{.v = slimlock } },
 	{ MODKEY,						XK_F12,						spawn,				{.v = dropterm} },
 	{ MODKEY,						XK_space,					spawn,				{.v = dmenucmd } },
+	{ MODKEY|ShiftMask,					XK_Return,					spawn,				{.v = termcmd } },
 	{ MODKEY,						XK_Return,					spawn,				{.v = termcmd } },
 	{ MODKEY|ShiftMask,					XK_b,						togglebar,			{0} },
 	{ MODKEY, 						XK_b,						toggleextrabar,			{0} },
@@ -156,7 +157,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,					XK_o,						setcfact,			{.f =  0.00} },
 	{ MODKEY,						XK_Down,					pushdown,			{0} },
         { MODKEY,						XK_Up,						pushup,				{0} },
-	{ MODKEY|ShiftMask,					XK_Return,					zoom,				{0} },
+	{ MODKEY|ShiftMask,					XK_Insert,					zoom,				{0} },
 	{ MODKEY,						XK_Tab,						view,				{0} },
 	{ MODKEY|ShiftMask,					XK_c,						killclient,			{0} },
 	{ MODKEY,						XK_t,						setlayout,			{.v = &layouts[0]} },
