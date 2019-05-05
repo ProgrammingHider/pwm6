@@ -42,7 +42,7 @@ Patches
 
 Installation
 ----------------------------
-Referee to the Wiki for Installation
+Refer to the Wiki for Installation
   
 Screenshot
 ----------------------------
