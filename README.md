@@ -43,7 +43,11 @@ Patches
 Installation
 ----------------------------
 Refer to the Wiki for Installation
-  
+ 
+For a Clock inside the Statusbar,
+clone PWM 5.8.2, copy statusbar.sh
+and execute it with .xinitrc
+
 Screenshot
 ----------------------------
 ![Screenshot](/screenshot.png)
